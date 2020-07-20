@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore DOM</title>
+    <style>
+        article{
+            border: 2px solid tomato;
+            border-radius: 20px;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h3 id="explore">Explore Dom</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis distinctio velit assumenda eveniet eum placeat laboriosam quia voluptas excepturi temporibus, iste sapiente aspernatur nihil rem vero, quo dignissimos natus aliquid?</p>
+        </section>
+        <section>
+            <article>
+                <h3 title="title by html" id="article1">article-1</h3>
+                <p class="author">author-1</p>
+                <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi consequatur in dolore? At repellat tempora ex accusantium, ducimus officia a inventore voluptatibus eum sint natus minus voluptates autem quia. Pariatur.</p>
+            </article>
+            <article class="special">
+                <h3>article-2</h3>
+                <p class="author">author-2</p>
+                <p class="description">Excepturi consequatur laudantium aut mollitia maiores rerum repudiandae maxime facilis labore, voluptates quam. Earum ipsam autem incidunt adipisci optio possimus numquam minus, corrupti est. Necessitatibus, dolorum. Magni nesciunt iste temporibus?</p>
+            </article>
+            <article>
+                <h3>article-3</h3>
+                <p class="author">author-3</p>
+                <p class="description">Nam consequatur odio aperiam animi, quam porro mollitia sit quaerat officia exercitationem maxime reiciendis quis? Esse odit omnis ipsum possimus sed iure, mollitia consequuntur facilis, minus sequi nemo error blanditiis!</p>
+            </article>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- puro html file ta ke ekta document bola hoi. 
+console.log(document) ==> likhle puro webpage er jinish gulake show korbe. amra document er vitor dhuke eke eke sob element ke access korte pari. 
+
+document.body ==> likhle webpage er body er part ta ke explore korbe. amra evabe webpage er jekono ekta part ke easily access korte pari. 
+
+puro webpage ke ba puro document ta ke javascript er ekta object hisebe convert kore fele. oi object er bivinno property gulake amra easily access korte pari. ei j document ta ke object hisebe banai fello js file er jonno. ei process ta ke bole DOM (Document Object Model). 
+
+getElementsByTagName('p') => console e eta dile p tag joto ase sob show korbe eksathe. egula sob collection ba array er moto kisu ekta akare show korbe. 
+
+getElementById("first") => specific first namer id jeta ase seta show korbe console e.  
+
+dom er khetre node mane holo ekta block ba element. jemon html, head, body egula ekekta node. ei node er sathe node.js er kono somporko nai. jokhon onek gula node eksathe thake tokhon tader ke bole node er list ba array. 
+
+dom node type search diye mozilla mdn er block ta porle aro clear hobe. 
+
+https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType 
+
+node er onek type thakte pare. jemon p, h1 egular node er type holo text node. erokom comment er o alada type ase. 
+
+Changing attribute by js: amra caile js diye kono ekta element ba tag er attribute ke o change kore dite pari. upore article1 er h3 tag ta ke html diye ekta title dewa hoise ar js diye o title set kora jai. jodi amra js diye title set kori tahole html diye set kora title ta cole jabe. 
+-->
